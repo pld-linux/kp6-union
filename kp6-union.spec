@@ -32,6 +32,7 @@ BuildRequires:	kf6-kiconthemes-devel >= %{kf_ver}
 BuildRequires:	kf6-kirigami-devel >= %{kf_ver}
 BuildRequires:	ninja
 BuildRequires:	qt6-build >= %{qt_ver}
+BuildRequires:	qt6-shadertools >= %{qt_ver}
 BuildRequires:	rpmbuild(macros) >= 2.004
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
