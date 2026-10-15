@@ -9,12 +9,12 @@
 Summary:	Plasma and Qt widget style and window decorations for Plasma 5 and 6
 Summary(pl.UTF-8):	Styl Plasmy i widżetów Qt oraz dekoracje okien dla Plasmy 5 i 6
 Name:		kp6-%{kpname}
-Version:	6.7.5
+Version:	6.8.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{version}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	b042c1083dc1f857b3be66a073c66c13
+# Source0-md5:	859a3ff15d62e2e9d56335f59c4b6526
 URL:		https://kde.org/
 BuildRequires:	Qt6Core-devel >= %{qt_ver}
 BuildRequires:	Qt6DBus-devel >= %{qt_ver}
@@ -23,7 +23,7 @@ BuildRequires:	Qt6Quick-devel >= %{qt_ver}
 BuildRequires:	Qt6ShaderTools-devel >= %{qt_ver}
 BuildRequires:	Qt6Widgets-devel >= %{qt_ver}
 BuildRequires:	cmake >= 3.25
-BuildRequires:	cxx-rust-cssparser-devel >= 1.0.0
+BuildRequires:	cxx-rust-cssparser-devel >= 1.1.0
 BuildRequires:	kf6-extra-cmake-modules >= %{kf_ver}
 BuildRequires:	kf6-kcolorscheme-devel >= %{kf_ver}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kf_ver}
@@ -89,6 +89,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/union-ruleinspector
+%attr(755,root,root) %{_bindir}/union-styletool
 %ghost %{_libdir}/libUnion.so.6
 %{_libdir}/libUnion.so.*.*
 %ghost %{_libdir}/libUnionQuickImpl.so.6
